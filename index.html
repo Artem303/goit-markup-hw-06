@@ -392,7 +392,7 @@
           </p>
         </div>
 
-        <div>
+        <div class="footer-soc-container">
           <h3 class="footer-subtitle">Social media</h3>
           <ul class="footer-social-list list">
             <li class="footer-social-item">
@@ -425,6 +425,17 @@
             </li>
           </ul>
         </div>
+        <form action="" class="forma-footer">
+          <p class="forma-text-footer">Subscribe</p>
+          <input type="email" class="footer-forma-input" placeholder="E-mail" />
+
+          <div class="footer-field">
+            <button type="submit" class="footer-forma-btn">Subscribe</button>
+            <svg class="footer-icon-btn" width="24px" height="24px">
+              <use href="./images/sprite.svg#icon-footer-input"></use>
+            </svg>
+          </div>
+        </form>
       </div>
     </footer>
     <!-- --------MODAL-------------- -->
@@ -435,6 +446,65 @@
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
+        <form action="" class="forma-modal">
+          <p class="forma-modal-text">
+            Leave your contacts and we will call you back
+          </p>
+
+          <label for="name" class="forma-modal-name-desc">Name</label>
+          <div class="modal-field-name">
+            <input type="text" id="name" class="forma-modal-name" />
+            <svg class="icon-name" width="12px" height="12px">
+              <use href="./images/sprite.svg#icon-input-name"></use>
+            </svg>
+          </div>
+
+          <label for="tel" class="forma-modal-tel-desc">Phone</label>
+          <div class="modal-field-tel">
+            <input
+              type="tel"
+              id="tel"
+              class="forma-modal-tel"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            />
+            <svg class="icon-tel" width="13px" height="13px">
+              <use href="./images/sprite.svg#icon-input-tel"></use>
+            </svg>
+          </div>
+
+          <label for="email" class="forma-modal-email-desc">Email</label>
+          <div class="modal-field-email">
+            <input type="email" id="email" class="forma-modal-email" />
+            <svg class="icon-email" width="15px" height="12px">
+              <use href="./images/sprite.svg#icon-input-email"></use>
+            </svg>
+          </div>
+
+          <label for="taxtarea" class="forma-modal-textarea-desc"
+            >Comment</label
+          >
+          <textarea
+            class="forma-modal-textarea"
+            name="taxtarea"
+            id="textarea"
+            placeholder="Text input"
+          ></textarea>
+
+          <div class="polisy-field">
+            <input
+              type="checkbox"
+              id="policy"
+              name="policy"
+              class="checkbox visuallly-hidden"
+            />
+            <label for="policy" class="forma-modal-policy-desc"
+              >I accept the terms and conditions of the &nbsp
+              <a href="" class="polisy-link">Privasy Polisy</a>
+            </label>
+          </div>
+
+          <button type="submit" class="forma-modal-btn-send">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
