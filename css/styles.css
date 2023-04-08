@@ -549,6 +549,7 @@ transition: var(--transition-shadow);
     position: relative;
     display: inline-block;
 }
+
 .footer-icon-btn {
     position: absolute;
     fill: var(--WHITE);
@@ -905,7 +906,7 @@ border-radius: 4px;
 .forma-modal-btn-send:focus {
     background-color: var(--OCEAN);
 }
-textarea:placeholder-shown {
+.forma-modal-textarea::placeholder {
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -913,7 +914,7 @@ textarea:placeholder-shown {
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
 }
-.forma-modal-textarea{
+.forma-modal-textarea {
     padding: 8px 16px;
 }
 
